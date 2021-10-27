@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>Advanced Object</title>
+        <style>
+            h1 {
+                font-size: 40px;
+            }
+            input {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Advanced Object</h1>
+        <input type="button" id='w1_introduce' value='Wizard1 Introduce'>
+        <input type="button" id='w1_play' value='Wizard1 Play'>
+        <input type="button" id='w2_introduce' value='Wizard2 Introduce'>
+        <input type="button" id='w2_play' value='Wizard2 Play'>
+
+        <script>
+            var object1 = {value: 10};
+            var object2 = object1;
+            var object3 = {value: 10};
+            console.log(`object1: ${object1.value}`);
+
+            console.log('object1===object2', object1===object2);
+            console.log('object1===object3', object1===object3);
+
+            object2.value = 15;
+            console.log(`object1: ${object1.value}, object2: ${object2.value}`);
+
+            class Player {
+                constructor(name, type) {
+                    console.log('player', this);
+                    this.name = name;
+                    this.type = type;
+                }
+
+                introduce() {
+                    console.log(`Hi I am ${this.name}, I am a ${this.type}`);
+                }
+            }
+
+            class Wizard extends Player {
+                constructor (name,type) {
+                    super(name,type)
+                    console.log('wizard',this);
+                }
+                play() {
+                    console.log(`WEEEEEEE I am a ${this.type}`);
+                }
+            }
+
+            const wizard1 = new Wizard('Shelly', 'Healer');
+            const wizard2 = new Wizard('Shawn', 'Dark Magic');
+
+            let w1_introduce = document.getElementById('w1_introduce');
+            w1_introduce.addEventListener('click', () => {
+                wizard1.introduce();
+            });
+
+            let w1_play = document.getElementById('w1_play');
+            w1_play.addEventListener('click', () => {
+                wizard1.play();
+            });
+
+            let w2_introduce = document.getElementById('w2_introduce');
+            w2_introduce.addEventListener('click', () => {
+                wizard2.introduce();
+            });
+
+            let w2_play = document.getElementById('w2_play');
+            w2_play.addEventListener('click', () => {
+                wizard2.play();
+            });
+        </script>
+    </body>
+</html>

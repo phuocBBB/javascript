@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>ES10</title>
+        <style>
+            h1 {
+                font-size:40px;
+            }
+            input {
+                font-size:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ES10</h1>
+        <input type="button" id='btn_flat1' value='flat array 1 level'>
+        <input type="button" id='btn_flat3' value = 'flat array 3 level'>
+        <input type="button" id='btn_trimStart' value = 'trim start'>
+        <input type="button" id='btn_trimEnd' value='trim end'>
+        <input type="button" id='btn_try' value = 'try...catch (no message)'>
+        <input type="button" id='btn_try_message' value = 'try...catch (with message)'>
+        <script>
+            let btn_flat1 = document.getElementById('btn_flat1');
+            btn_flat1.addEventListener('click', () => {
+                let array = [1,[2,3,4],5,[6,7]];
+                console.log('original array: ', array);
+                console.log('flat array 1 level: ', array.flat());
+            });
+
+            let btn_flat3 = document.getElementById('btn_flat3');
+            btn_flat3.addEventListener('click', () => {
+                let array = [1,[2,3,[4,5,[6,7]]],[2,3,[,4,5,[4,5,6,7]]],7,8,9];
+                console.log('orginal array: ', array);
+                console.log('flat array multi level: ', array.flat(100));
+            });
+
+            let btn_trimStart = document.getElementById('btn_trimStart');
+            btn_trimStart.addEventListener('click', () => {
+                const userEmail = '                 phuochh@outlook.com';
+                console.log(userEmail);
+                console.log('after trim:', userEmail.trimStart());
+
+            });
+
+            let btn_trimEnd = document.getElementById('btn_trimEnd');
+            btn_trimEnd.addEventListener('click', () => {
+                const userEmail = "phuochh@outlook.com              ";
+                console.log(userEmail);
+                console.log('after trim: ', userEmail.trimEnd());
+            });
+
+            let btn_try = document.getElementById('btn_try');
+            btn_try.addEventListener('click', () => {
+                try {
+                    bob + 'Hi';
+                } catch {
+                    console.log('you got error');
+                }
+            });
+
+            let btn_try_message = document.getElementById('btn_try_message');
+            btn_try_message.addEventListener('click', () => {
+                try {
+                    bob + 'hi';
+                } catch(error) {
+                    console.log(`you get error: ${error}`);
+                }
+            });
+        </script>
+    </body>
+</html>

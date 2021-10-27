@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Advanced Function</title>
+    </head>
+    <body>
+        <input type="button" id='closure' value='closure'>
+        <input type="button" id='currying' value='currying'>
+        <input type="button" id='compose' value='compose'>
+        <input type="button" id='compose2' value='compose2'>
+
+        <script>
+            //closures
+            const first = () => {
+                var greet = 'Hi';
+                function second() {
+                    alert(greet);
+                }
+                return second;
+            }
+
+            closure = document.getElementById('closure');
+            closure.addEventListener('click', () => {
+                var newFunc = first();
+                newFunc();
+            });
+
+            //currying
+            const multiply = (a,b) => a*b;
+            const curriedmultiply = (a) => (b) => a * b;
+            const multiply5 = curriedmultiply(5); //a
+            currying = document.getElementById('currying');
+            currying.addEventListener('click', () => {
+                alert(multiply5(10));
+            });
+
+            //compose
+            const compose_func = (f,g) => (a) => f(g(a));
+            const sum = (num) => num+1;
+
+            let compose = document.getElementById('compose');
+            compose.addEventListener('click', () => {
+                result = compose_func(sum, sum)(5);
+                alert(result);
+            });
+
+            //compose 2
+            const compose_func2 = (f,g) => (x,n) => f(g(x),n);
+            const g_ = (r) => 1+r;
+            const f_ = (a,n) => a**n;
+            let compose2 = document.getElementById('compose2');
+            compose2.addEventListener('click', () => {
+                result = compose_func2(f_,g_)(0.1,1);
+                alert(result);
+            });
+
+        </script>
+    </body>
+</html>

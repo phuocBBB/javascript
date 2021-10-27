@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>ES8</title>
+    </head>
+    <body>
+        <h1>ES8</h1>
+        <script>
+            //.padStart()
+            //.padEnd()
+            console.log('Turtle'.padStart(10));
+            console.log('Turtle'.padEnd(10));
+
+            //function style
+            const fun = (
+                a,  //variable a
+                b,  //variable b
+                c,  //variable c
+                d   //variable d
+                ) => {
+                    console.log(a);
+            }
+            fun(1,2,3,4);
+
+            //Object.keys, Object.values, Object.entries
+            let obj = {
+                username0: 'Santa',
+                username1: 'Beo',
+                username2: 'Bun'
+            };
+
+            console.log('+++++++++++++Keys: ');
+            Object.keys(obj).forEach((key,index) => {
+                console.log(key, obj[key]);
+            });
+
+            console.log('+++++++++++++Values: ');
+            Object.values(obj).forEach(value => {
+                console.log(value);
+            });
+
+            console.log('+++++++++++++Entries: ');
+            Object.entries(obj).forEach(entry => {
+                console.log(entry);
+            });
+
+            console.log('+++++++++++++Entries with map: ');
+            let a  = Object.entries(obj).map(entry => {
+                return entry[1]+ entry[0][entry[0].length-1];
+            });
+            console.log(a);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+    <head>
+        <title>Advanced Array</title>
+        <style>
+            h1 {
+                font-size:36px;
+            }
+            label {
+                display: block;
+                font-size: 20px;
+            }
+            input, textarea {
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Advanced Array</h1>
+        <br>
+        <br>
+
+        <label for="forEach">forEach</label>
+        <textarea name="forEach" id="forEach" cols="30" rows="2"></textarea>
+        <input type="button" id='btn_forEach' value='forEach'>
+
+        <label for="map">map</label>
+        <textarea name="map" id="map" cols="30" rows="2"></textarea>
+        <input type="button" id='btn_map' value='map'>
+
+        <label for="filter">filter</label>
+        <textarea name="filter" id="filter" cols="30" rows="2"></textarea>
+        <input type="button" id='btn_filter' value='filter'>
+
+        <label for="reduce">reduce</label>
+        <textarea name="reduce" id="reduce" cols="30" rows="2"></textarea>
+        <input type="button" id='btn_reduce' value='reduce'>
+
+        <script>
+            const array = [1,2,3,4,5];
+
+            //forEach
+            let btn_forEach = document.getElementById('btn_forEach');
+            btn_forEach.addEventListener('click', () => {
+                const double = [];
+                const newArray = array.forEach((num) => {
+                    double.push(num * 2);
+                });
+                
+                let forEach = document.getElementById('forEach');
+                forEach.value = double;
+                console.log('forEach: ', newArray);
+
+            });
+
+            //map
+            let btn_map = document.getElementById('btn_map');
+            btn_map.addEventListener('click', () => {
+                // const mapArray = array.map((num) => {
+                //     return num * 2;
+                // });
+                const mapArray = array.map(num => num *2);
+                let map = document.getElementById('map');
+                map.value = mapArray;
+                console.log('mapArray', mapArray);
+            });
+
+            //filter;
+            let btn_filter = document.getElementById('btn_filter');
+            btn_filter.addEventListener('click', () => {
+                // const filterArray = array.filter((num) => {
+                //     return num < 5;
+                // });
+                const filterArray = array.filter(num => num < 5);
+                let filter = document.getElementById('filter');
+                filter.value = filterArray;
+                console.log('filterArray', filterArray);
+            });
+
+            //reduce
+            let btn_reduce = document.getElementById('btn_reduce');
+            btn_reduce.addEventListener('click', () => {
+                const reduceArray = array.reduce((accumulator, num) => {
+                    return accumulator + num;
+                }, 10);
+                let reduce = document.getElementById('reduce');
+                reduce.value = reduceArray;
+                console.log('reduceArray', reduceArray);
+            });
+
+        </script>
+    </body>
+</html>

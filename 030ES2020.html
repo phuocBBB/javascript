@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>ES2020</title>
+    </head>
+    <body>
+        <h1>ES2020</h1>
+        <script>
+            let phuoc = {
+                rogue: {
+                    color: 'white',
+                    weight: 2.2,
+                    height: 0.5,
+                }
+            };
+
+            let bin = {
+                rav4: {
+                    color: 'gray',
+                    weight: 2,
+                    height: 0.6,
+                }
+            };
+
+            let color = bin?.rogue?.color ?? phuoc?.rogue?.color; //check if null or undefined
+            //let color = bin?.rav4?.color || phuoc?.rogue?.color; //check if null/undefined/empty/zero
+            console.log(color);
+        </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>ES7</title>
+        <style>
+            input {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>ES7: includes, </h1>
+        <input type="button" id='square' value='square'>
+        <input type="button" id='cube' value='cube'>
+        <script>
+            let a = ['cat', 'dog', 'pig'];
+            console.log(a);
+            console.log('cat exists? ', a.includes('cat'));
+            console.log('bird exists? ', a.includes('bird'));
+
+            let btn_square  = document.getElementById('square');
+            btn_square.addEventListener('click', () => {
+                square = (x) => x**2;
+                alert(square(5));
+            });
+
+            let btn_cube = document.getElementById('cube');
+            btn_cube.addEventListener('click', () => {
+                cube = (x) => x**3;
+                alert( cube(5));
+            });
+            
+        </script>
+    </body>
+</html>
