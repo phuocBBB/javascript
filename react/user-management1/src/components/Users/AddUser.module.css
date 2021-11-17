@@ -1,0 +1,42 @@
+.input {
+    margin: 2rem auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40rem;
+  }
+  
+  .input label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .input label input {
+    font: inherit;
+    font-weight: normal;
+    display: block;
+    width: 100%;
+    /* border: 1px solid #ccc; */
+    padding: 0.15rem;
+    margin-bottom: 0.5rem;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #356f7b;
+  }
+  
+  .input input:focus {
+    outline: none;
+    /* border-color: #4f005f; */
+    background: rgb(238, 249, 255);
+    ;
+  }
+
+.input label.invalid{
+    color: red;
+}
+
+.input label.invalid input{
+    background: red;
+}
+  

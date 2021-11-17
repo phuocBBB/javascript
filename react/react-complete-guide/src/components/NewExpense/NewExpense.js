@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import ExpenseForm from './ExpenseForm';
 import './NewExpense.css';
 
@@ -13,8 +13,19 @@ const NewExpense = (props) => {
         // console.log(expenseData);
     };
 
+    const [isEdit, setIsEdit] = useState(false);
+
+    const AddNewExpenseHandler = () => {
+        setIsEdit(true);
+    };
+
+    const CancelExpenseHandler = () => {
+        setIsEdit(false);
+    };
+
     return <div className='new-expense'>
-        <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} />
+        {!isEdit && <button onClick={AddNewExpenseHandler}>Add New Expense</button>}
+        {isEdit && <ExpenseForm onSaveExpenseData={saveExpenseDataHandler} onCancelExpense={CancelExpenseHandler}/>}
     </div>
 };
 

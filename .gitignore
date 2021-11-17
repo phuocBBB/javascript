@@ -1,0 +1,185 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+#react/react-complte-guide/
+# dependencies
+react/react-complete-guide/node_modules
+react/react-complete-guide/.pnp
+react/react-complete-guide/.pnp.js
+
+# testing
+react/react-complete-guide/coverage
+
+# production
+react/react-complete-guide/build
+
+# misc
+react/react-complete-guide/.DS_Store
+react/react-complete-guide/.env.local
+react/react-complete-guide/.env.development.local
+react/react-complete-guide/.env.test.local
+react/react-complete-guide/.env.production.local
+
+react/react-complete-guide/npm-debug.log*
+react/react-complete-guide/yarn-debug.log*
+react/react-complete-guide/yarn-error.log*
+
+#react/styling-react-components
+# dependencies
+react/styling-react-components/node_modules
+react/styling-react-components/.pnp
+react/styling-react-components/.pnp.js
+
+# testing
+react/styling-react-components/coverage
+
+# production
+react/styling-react-components/build
+
+# misc
+react/styling-react-components/.DS_Store
+react/styling-react-components/.env.local
+react/styling-react-components/.env.development.local
+react/styling-react-components/.env.test.local
+react/styling-react-components/.env.production.local
+
+react/styling-react-components/npm-debug.log*
+react/styling-react-components/yarn-debug.log*
+react/styling-react-components/yarn-error.log*
+
+#react/user-management
+# dependencies
+react/user-management/node_modules
+react/user-management/.pnp
+react/user-management/.pnp.js
+
+# testing
+react/user-management/coverage
+
+# production
+react/user-management/build
+
+# misc
+react/user-management/.DS_Store
+react/user-management/.env.local
+react/user-management/.env.development.local
+react/user-management/.env.test.local
+react/user-management/.env.production.local
+
+react/user-management/npm-debug.log*
+react/user-management/yarn-debug.log*
+react/user-management/yarn-error.log*
+
+#react/user-management1
+# dependencies
+react/user-management1/node_modules
+react/user-management1/.pnp
+react/user-management1/.pnp.js
+
+# testing
+react/user-management1/coverage
+
+# production
+react/user-management1/build
+
+# misc
+react/user-management1/.DS_Store
+react/user-management1/.env.local
+react/user-management1/.env.development.local
+react/user-management1/.env.test.local
+react/user-management1/.env.production.local
+
+react/user-management1/npm-debug.log*
+react/user-management1/yarn-debug.log*
+react/user-management1/yarn-error.log*
+
+#react/login-page
+# dependencies
+react/login-page/node_modules
+react/login-page/.pnp
+react/login-page/.pnp.js
+
+# testing
+react/login-page/coverage
+
+# production
+react/login-page/build
+
+# misc
+react/login-page/.DS_Store
+react/login-page/.env.local
+react/login-page/.env.development.local
+react/login-page/.env.test.local
+react/login-page/.env.production.local
+
+react/login-page/npm-debug.log*
+react/login-page/yarn-debug.log*
+react/login-page/yarn-error.log*
+
+#react/food-order
+# dependencies
+react/food-order/node_modules
+react/food-order/.pnp
+react/food-order/.pnp.js
+
+# testing
+react/food-order/coverage
+
+# production
+react/food-order/build
+
+# misc
+react/food-order/.DS_Store
+react/food-order/.env.local
+react/food-order/.env.development.local
+react/food-order/.env.test.local
+react/food-order/.env.production.local
+
+react/food-order/npm-debug.log*
+react/food-order/yarn-debug.log*
+react/food-order/yarn-error.log*
+
+#react/tda
+# dependencies
+react/tda/node_modules
+react/tda/.pnp
+react/tda/.pnp.js
+
+# testing
+react/tda/coverage
+
+# production
+react/tda/build
+
+# misc
+react/tda/.DS_Store
+react/tda/.env.local
+react/tda/.env.development.local
+react/tda/.env.test.local
+react/tda/.env.production.local
+
+react/tda/npm-debug.log*
+react/tda/yarn-debug.log*
+react/tda/yarn-error.log*
+
+#react/database-connection
+# dependencies
+react/database-connection/node_modules
+react/database-connection/.pnp
+react/database-connection/.pnp.js
+
+# testing
+react/database-connection/coverage
+
+# production
+react/database-connection/build
+
+# misc
+react/database-connection/.DS_Store
+react/database-connection/.env.local
+react/database-connection/.env.development.local
+react/database-connection/.env.test.local
+react/database-connection/.env.production.local
+
+react/database-connection/npm-debug.log*
+react/database-connection/yarn-debug.log*
+react/database-connection/yarn-error.log*
