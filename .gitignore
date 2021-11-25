@@ -183,3 +183,72 @@ react/database-connection/.env.production.local
 react/database-connection/npm-debug.log*
 react/database-connection/yarn-debug.log*
 react/database-connection/yarn-error.log*
+
+#react/optimization-project
+# dependencies
+react/optimization-project/node_modules
+react/optimization-project/.pnp
+react/optimization-project/.pnp.js
+
+# testing
+react/optimization-project/coverage
+
+# production
+react/optimization-project/build
+
+# misc
+react/optimization-project/.DS_Store
+react/optimization-project/.env.local
+react/optimization-project/.env.development.local
+react/optimization-project/.env.test.local
+react/optimization-project/.env.production.local
+
+react/optimization-project/npm-debug.log*
+react/optimization-project/yarn-debug.log*
+react/optimization-project/yarn-error.log*
+
+#react/demo-list
+# dependencies
+react/demo-list/node_modules
+react/demo-list/.pnp
+react/demo-list/.pnp.js
+
+# testing
+react/demo-list/coverage
+
+# production
+react/demo-list/build
+
+# misc
+react/demo-list/.DS_Store
+react/demo-list/.env.local
+react/demo-list/.env.development.local
+react/demo-list/.env.test.local
+react/demo-list/.env.production.local
+
+react/demo-list/npm-debug.log*
+react/demo-list/yarn-debug.log*
+react/demo-list/yarn-error.log*
+
+#react/users-list
+# dependencies
+react/users-list/node_modules
+react/users-list/.pnp
+react/users-list/.pnp.js
+
+# testing
+react/users-list/coverage
+
+# production
+react/users-list/build
+
+# misc
+react/users-list/.DS_Store
+react/users-list/.env.local
+react/users-list/.env.development.local
+react/users-list/.env.test.local
+react/users-list/.env.production.local
+
+react/users-list/npm-debug.log*
+react/users-list/yarn-debug.log*
+react/users-list/yarn-error.log*
