@@ -252,3 +252,96 @@ react/users-list/.env.production.local
 react/users-list/npm-debug.log*
 react/users-list/yarn-debug.log*
 react/users-list/yarn-error.log*
+
+#react/custom-react-hooks
+# dependencies
+react/custom-react-hooks/node_modules
+react/custom-react-hooks/.pnp
+react/custom-react-hooks/.pnp.js
+
+# testing
+react/custom-react-hooks/coverage
+
+# production
+react/custom-react-hooks/build
+
+# misc
+react/custom-react-hooks/.DS_Store
+react/custom-react-hooks/.env.local
+react/custom-react-hooks/.env.development.local
+react/custom-react-hooks/.env.test.local
+react/custom-react-hooks/.env.production.local
+
+react/custom-react-hooks/npm-debug.log*
+react/custom-react-hooks/yarn-debug.log*
+react/custom-react-hooks/yarn-error.log*
+
+
+#react/tasks-management
+# dependencies
+react/tasks-management/node_modules
+react/tasks-management/.pnp
+react/tasks-management/.pnp.js
+
+# testing
+react/tasks-management/coverage
+
+# production
+react/tasks-management/build
+
+# misc
+react/tasks-management/.DS_Store
+react/tasks-management/.env.local
+react/tasks-management/.env.development.local
+react/tasks-management/.env.test.local
+react/tasks-management/.env.production.local
+
+react/tasks-management/npm-debug.log*
+react/tasks-management/yarn-debug.log*
+react/tasks-management/yarn-error.log*
+
+#react/forms-user-input
+# dependencies
+react/forms-user-input/node_modules
+react/forms-user-input/.pnp
+react/forms-user-input/.pnp.js
+
+# testing
+react/forms-user-input/coverage
+
+# production
+react/forms-user-input/build
+
+# misc
+react/forms-user-input/.DS_Store
+react/forms-user-input/.env.local
+react/forms-user-input/.env.development.local
+react/forms-user-input/.env.test.local
+react/forms-user-input/.env.production.local
+
+react/forms-user-input/npm-debug.log*
+react/forms-user-input/yarn-debug.log*
+react/forms-user-input/yarn-error.log*
+
+#react/forms-user-input1
+# dependencies
+react/forms-user-input1/node_modules
+react/forms-user-input1/.pnp
+react/forms-user-input1/.pnp.js
+
+# testing
+react/forms-user-input1/coverage
+
+# production
+react/forms-user-input1/build
+
+# misc
+react/forms-user-input1/.DS_Store
+react/forms-user-input1/.env.local
+react/forms-user-input1/.env.development.local
+react/forms-user-input1/.env.test.local
+react/forms-user-input1/.env.production.local
+
+react/forms-user-input1/npm-debug.log*
+react/forms-user-input1/yarn-debug.log*
+react/forms-user-input1/yarn-error.log*
